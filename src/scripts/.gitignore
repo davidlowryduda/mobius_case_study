@@ -1,0 +1,5 @@
+# sentinel values for make
+
+good_data
+corrupted_data
+shuffle
