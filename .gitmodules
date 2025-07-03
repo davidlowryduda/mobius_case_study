@@ -1,0 +1,3 @@
+[submodule "Int2Int"]
+	path = Int2Int
+	url = https://github.com/f-charton/Int2Int.git
