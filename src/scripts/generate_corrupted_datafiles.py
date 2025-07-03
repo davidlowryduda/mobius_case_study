@@ -117,7 +117,7 @@ def main():
         open(outdir + "mu_true.txt", "w", encoding="utf8") as mu23truefile,
         open(outdir + "musq_true.txt", "w", encoding="utf8") as musq23truefile,
     ):
-        while len(seen) < 10**1:
+        while len(seen) < 10**5:
             n = random.randint(2, 10**13)
             if n in seen:
                 continue

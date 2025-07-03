@@ -65,7 +65,7 @@ def main():
         open(outdir + "mu_modp_and_p.txt", "w", encoding="utf8") as mufile,
         open(outdir + "musq_modp_and_p.txt", "w", encoding="utf8") as musqfile,
     ):
-        while len(seen) < 10**1:
+        while len(seen) < 10**6:
             n = random.randint(2, 10**13)
             if n in seen:
                 continue
