@@ -8,11 +8,18 @@ usage:
 	@echo "  shuffle"
 	@echo "  clean"
 
-good_data:
+
+.PHONY: mobius
+mobius:
+	make -C ../mobius_code mobius.so
+
+good_data: mobius
+	mkdir -p ../../input
 	$(PYTHON) generate_datafiles.py
 	touch good_data
 
-corrupted_data:
+corrupted_data: mobius
+	mkdir -p ../../input
 	$(PYTHON) generate_corrupted_datafiles.py
 	touch corrupted_data
 

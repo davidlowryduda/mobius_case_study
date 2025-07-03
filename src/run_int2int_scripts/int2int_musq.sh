@@ -16,4 +16,8 @@ function abspath {
     fi
 }
 
-python3 ../../Int2Int --num_workers 0 --dump_path "`abspath ../../models/`" --exp_name musq --exp_id 1 --train_data "`abspath ../../input/musq_modp_and_p.txt.train`" --eval_data "`abspath ../../input/musq_modp_and_p.txt.test`" --eval_size 10000 --epoch_size 50000 --operation data --data_types 'int[200]:range(-1,2)' --optimizer 'adam_inverse_sqrt,lr=0.00025' --max_epoch 201
+
+mkdir -p ../../models/
+
+
+python3 ../../Int2Int/train.py --num_workers 0 --dump_path "`abspath ../../models/`" --exp_name musq --exp_id 1 --train_data "`abspath ../../input/musq_modp_and_p.txt.train`" --eval_data "`abspath ../../input/musq_modp_and_p.txt.test`" --eval_size 10000 --epoch_size 50000 --operation data --data_types 'int[200]:range(-1,2)' --optimizer 'adam_inverse_sqrt,lr=0.00025' --max_epoch 201
