@@ -6,6 +6,7 @@ data:
 .PHONY: run
 run: data
 	bash int2int_mu.sh
+	bash int2int_musq.sh
 
 .PHONY: run-cpu
 run-cpu: data
