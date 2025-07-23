@@ -4,7 +4,7 @@
 This repository contains code to generate data and ML models as used in the
 paper [Studying number theory with deep learning: a case study with the Möbius
 and squarefree indicator functions](https://arxiv.org/abs/2502.10335) by David
-Lowry_Duda. Building on Charton's [Int2Int](https://github.com/f-charton/Int2Int/tree/main)
+Lowry-Duda. Building on Charton's [Int2Int](https://github.com/f-charton/Int2Int/tree/main)
 transformer code, we train small transformer models to calculate the Möbius
 function $\mu(n)$ and the squarefree indicator function $\mu^2(n)$.
 
